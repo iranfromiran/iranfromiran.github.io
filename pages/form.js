@@ -27,10 +27,11 @@ export default function ContactMe() {
 return (
 <>
   <form onSubmit={handleSubmit} className={styles.form}>
-    
+  
   
   <label htmlFor="email"></label>
           <input
+          name="email"
             id="email"
             type="email"
             placeholder='Email:'
@@ -39,6 +40,7 @@ return (
           />
           <label htmlFor="message"></label>
           <textarea
+          name="message"
             id="message"
             type="text"
             rows="4"
