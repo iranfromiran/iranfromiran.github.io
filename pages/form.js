@@ -20,6 +20,7 @@ export default function ContactMe() {
     const result = await response.json();
     if (result.success) {
         console.log(result);
+        alert("sent successfully");
     }
 }
 
@@ -27,6 +28,7 @@ return (
 <>
   <form onSubmit={handleSubmit} className={styles.form}>
     
+  
   <label htmlFor="email"></label>
           <input
             id="email"
