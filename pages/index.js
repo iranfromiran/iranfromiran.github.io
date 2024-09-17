@@ -64,7 +64,8 @@ export default function Home() {
         <span>Tailwindcss</span>
         <span>Typescript</span>
         <span>React</span>
-        <span>Next.js</span>
+        <span>Node.js</span>
+        <span>Mongo DB</span>
         <span>git & github</span>
        </div>
        <h2>languages</h2>
