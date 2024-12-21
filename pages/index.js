@@ -95,6 +95,7 @@ export default function Home() {
       
       <ContactMe />
       </main>
+      <footer className={styles.footer}>illustrated and developed with ♡</footer>
     </>
   )
 }

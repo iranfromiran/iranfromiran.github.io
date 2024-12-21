@@ -3,8 +3,6 @@
 const nextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true},
-  // assetPrefix: isProd ? '/iranfromiran.github.io/' : '',
-  // basePath: isProd ? '/iranfromiran.github.io' : '',
   output: 'export',
 }
 
