@@ -1,0 +1,96 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '@/styles/Home.module.css'
+import ContactMe from '../pages/form'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>iran from iran</title>
+        <meta name="portfolio" content="web developer portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/laptop-icon.png" />
+      </Head>
+      <main className={styles.main}>
+        <div className={styles.socialMedia}>
+        <Image
+                src="/github.png"
+                alt="theiranfromiran github link"
+                width={30}
+                height={30}
+                
+              />
+              <Image
+                src="/linkdein.png"
+                alt="Vercel Logo"
+                width={30}
+                height={30}
+                
+              />
+          </div>
+
+
+        <div className={styles.intro}>
+          <div className={styles.dorood}>درود</div>
+          
+          <p>it's iran from iran<br/>i'm a front-end web developer 
+          </p>
+        
+          
+        </div>
+
+        <div className={styles.programmer}>
+          <div className={styles.testpic}></div>
+              <div className={styles.codeDiv}>
+              <code></code>
+              </div>
+       </div>
+       <div className={styles.aboutmePage}>
+       <div className={styles.aboutContainer}>
+       <h2>about me</h2>
+       <p>I love creating. lately I've discovered my passion for the world of web development. coding it's like a tool for me to make my ideas into life so everyone can access it from their android phone or iphone to laptops... . I've formed my base knowledge about front-end web development and i want to put in work what i know and learn among professionals.
+       </p></div>
+       
+       <h2>tech stack</h2>
+       <div className={styles.techStack}>
+        <span>Html</span>
+        <span>Css</span>
+        <span>Tailwindcss</span>
+        <span>Typescript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Mongo DB</span>
+        <span>git & github</span>
+       </div>
+       <h2>languages</h2>
+       <p>persian , english</p>
+      </div>
+
+      <div className={styles.projectPage}>
+      <h2>my projects</h2>
+      <div className={styles.ploraids}>
+                
+                
+                
+                
+              
+              </div>
+      </div>
+      <div className={styles.header}>
+        <h3 className={styles.chaitext}>let's drink some chai
+           and say hi</h3>
+        <Image
+                src="/chai0.png"
+                alt="Vercel Logo"
+                className={styles.chai}
+                width={30}
+                height={40}/>
+      </div>
+      
+      <ContactMe />
+      </main>
+      <footer className={styles.footer}>illustrated and developed with ♡</footer>
+    </>
+  )
+}
