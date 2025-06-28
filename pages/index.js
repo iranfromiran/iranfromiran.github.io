@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import ContactMe from '../pages/form'
 import React, { useRef, useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const imageContainerRef = useRef(null);
@@ -47,21 +48,27 @@ export default function Home() {
       <meta name="portfolio" content="web developer portfolio" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/laptop-icon.png" />
+      <link rel="preload" href="/irannastaliq-webfont.woff2" as="font" type="font/woff" crossorigin="anonymous"/>
+      <link rel="preload" href="/irannastaliq-webfont.woff" as="font" type="font/woff" crossorigin="anonymous"/>
     </Head>
     <main className={styles.main}>
       <div className={styles.socialMedia}>
-        <Image
-          src="/github.png"
-          alt="theiranfromiran github link"
-          width={30}
-          height={30}
-        />
-        <Image
-          src="/linkdein.png"
-          alt="Vercel Logo"
-          width={30}
-          height={30}
-        />
+        <Link href="https://github.com/iranfromiran" target='_blank' rel='noopener'>
+            <Image
+              src="/github.png"
+              alt="my github link"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/iranfromiran" target='_blank' rel='noopener'>
+            <Image
+              src="/linkdein.png"
+              alt="my linkdein link"
+              width={30}
+              height={30}
+            />
+          </Link>
       </div>
       <div className={styles.intro}>
         <div className={styles.dorood}>درود</div>
